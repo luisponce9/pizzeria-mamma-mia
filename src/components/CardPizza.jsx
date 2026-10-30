@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-const CardPizza = ( {name='Pizza Napolitana', price=5950, ingredients=['a','b','c'], img = 'img'}) => {
+const CardPizza = ( {name, price, ingredients, img }) => {
     return(
         <Card className="h-100">
             <Card.Img
