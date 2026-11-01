@@ -6,9 +6,19 @@ Aplicación web desarrollada con React y Vite para la gestión y visualización 
 
 - [x] **Hito 1:** Maquetación y Componentes Estáticos.
 - [x] **Hito 2:** Estado de los Componentes y Eventos.
+- [x] **Hito 3:** Renderización Dinámica de Componentes.
 
-## 🚀 Características Actuales (Hito 2)
+## 🚀 Características Actuales (Hito 3)
 
+### Hito 3: Renderización Dinámica y Carrito de Compras
+* **Catálogo Dinámico (`<Home />`):** Renderización de múltiples componentes `<CardPizza />` iterando sobre un arreglo de datos (`pizzas.js`) mediante el método `.map()`.
+* **Props Avanzadas (`<CardPizza />`):** Despliegue de listas dinámicas iterando arreglos anidados (ingredientes) para generar etiquetas `<li>` de forma automática con sus respectivas `keys`.
+* **Carrito Interactivo (`<Cart />`):** 
+  * Manejo del estado global del carrito con `useState`.
+  * Funciones integradas para **aumentar** y **disminuir** la cantidad de pizzas modificando arreglos de forma inmutable.
+  * Lógica de eliminación automática (usando `.filter()`) cuando la cantidad de una pizza llega a cero.
+  * Cálculo dinámico del **Total** a pagar recorriendo los elementos activos.
+  
 ### Hito 2: Interactividad y Formularios
 * **Gestión de Estado:** Uso del hook `useState` para controlar los datos ingresados en los componentes de `Login` y `Register`.
 * **Validación de Datos:** Prevención del comportamiento por defecto (`e.preventDefault()`) e implementación de validaciones lógicas:
