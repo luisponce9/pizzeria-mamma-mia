@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MiNavbar from './components/MiNavbar.jsx'
 import Footer from './components/Footer.jsx'
-import Home from './components/Home.jsx'
-import RegisterPage from './components/RegisterPage.jsx'
-import LoginPage from './components/LoginPage.jsx'
+//import Home from './components/Home.jsx'
+import Cart from './components/Cart.jsx'
+//import RegisterPage from './components/RegisterPage.jsx'
+//import LoginPage from './components/LoginPage.jsx'
 
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
 
       {/*<RegisterPage />*/}
 
-      <LoginPage />
+      {/*<LoginPage />*/}
+
+      <Cart />
 
       <Footer />
     </div>
